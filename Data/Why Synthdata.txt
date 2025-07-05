@@ -1,0 +1,3 @@
+For now I will test synth dataset I created to fully understand the system and it's components.
+later, I will move to Kaggle dataset and datasets created from the docs.
+It won't differ much.
