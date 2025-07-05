@@ -1,0 +1,45 @@
+1. PD Model — Probability of Default
+Returned value: A float between 0 and 1 (e.g., 0.0576)
+
+Meaning:
+The estimated probability that the borrower will default on their loan within the next 12 months (or your prediction horizon).
+For example, 0.0576 = 5.76% chance of default.
+
+Use:
+Helps decide if you approve or reject a loan application, or how risky the client is. Lower PD = safer borrower.
+
+2. LGD Model — Loss Given Default
+Returned value: A float between 0 and 1 (e.g., 0.75)
+
+Meaning:
+The percentage of the loan amount expected to be lost if the borrower defaults.
+For example, 0.75 = 75% loss on the exposure at default.
+
+Use:
+Used for risk provisioning, calculating expected credit loss (ECL), and capital allocation.
+Only meaningful if borrower defaults (PD > 0).
+
+3. Segmentation Model — Risk Cluster
+Returned values:
+
+risk_cluster: integer cluster label (e.g., 3)
+
+pca_components: reduced-dimension features representing input characteristics
+
+Meaning:
+The cluster label groups clients with similar risk profiles based on behavior and financial features.
+PCA components help visualize or interpret the client’s position in reduced feature space.
+
+Use:
+
+For portfolio segmentation to customize credit policies.
+
+Identify high-risk vs low-risk groups beyond just PD/LGD.
+
+Drive marketing, cross-sell strategies, or risk monitoring.
+
+Summary of business impact:
+Model	Output	What it tells you	Why it matters
+PD	Probability	Likelihood of borrower default	Loan approval, risk-based pricing
+LGD	Loss fraction	Expected % loss if default happens	Loss provisioning, capital reserves
+Segmentation	Cluster label	Client risk group and behavior pattern	Tailored management & monitoring
