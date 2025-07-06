@@ -1,4 +1,6 @@
 # PixCARD: Unified Credit Risk API 
+![Opera Instantané_2025-07-06_125907_127 0 0 1](https://github.com/user-attachments/assets/68073cfc-1598-471f-9ce0-180effcba8ee)
+
 
 This project contains a self-contained, unified Python script that builds, trains, and serves a suite of machine learning and deep learning models for credit risk assessment. The application uses **FastAPI** to create a robust web API and trains all necessary models from scratch using **XGBoost**, **Scikit-learn**, and **PyTorch**.
 
